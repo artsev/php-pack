@@ -3,8 +3,8 @@ questions:
     -
         question: 'Which of the following is not valid syntax for creating a new array key?'
         answers:
-            - {value: '$a[] = "value";', correct: false}
-            - {value: '$a{} = "value";', correct: true}
+            - {value: '$a[] = "value";', correct: true}
+            - {value: '$a{} = "value";', correct: false}
             - {value: '$a[0] = "value";', correct: false}
             - {value: '$a{0} = "value";', correct: false}
             - {value: '$a[$b = 0] = "value";', correct: false}

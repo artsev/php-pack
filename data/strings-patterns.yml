@@ -131,7 +131,7 @@ questions:
                     Which string does the following PCRE regular expression match?
                     $regex = "/^([a-z]{5})[1-5]+([a-z]+)/";
         answers:
-            - {value: Hello34262343goodbye', correct: false}
+            - {value: 'Hello34262343goodbye', correct: false}
             - {value: 'frank12345abc', correct: true}
             - {value: 'hello34212343goodbye', correct: true}
             - {value: 'abcdefghi12345abc', correct: false}

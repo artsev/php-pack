@@ -94,12 +94,34 @@ questions:
     -
       question: 'The ??? constant in a CLI script is an automatically provided file resource representing standard input of the terminal.'
       answers:
-        { value: 'STDIO', correct: false }
-        { value: 'STDIN', correct: true }
-        { value: 'PHP::STDIO', correct: false }
-        { value: '__STDIN__', correct: false }
-        { value: 'STD_IN', correct: false }
+          - { value: 'STDIO', correct: false }
+          - { value: 'STDIN', correct: true }
+          - { value: 'PHP::STDIO', correct: false }
+          - { value: '__STDIN__', correct: false }
+          - { value: 'STD_IN', correct: false }
       help: |
         http://php.net/manual/en/features.commandline.io-streams.php
+    -
+      question: |
+        Consider the following code snippet:
 
+        function foo(&$a = 8)
+        {
+            $b = &$a;
+            $b -= $a + 3;
 
+            return $b;
+        }
+
+        $a = foo(4);
+        echo $a;
+
+        What will be the outcome of executing this script?
+      answers:
+          - { value: -4, correct: false }
+          - { value: 8, correct: false }
+          - { value: 3, correct: false }
+          - { value: -3, correct: false }
+          - { value: 'A PHP fatal error.', correct: true }
+      help: |
+        http://php.net/manual/en/language.references.php
