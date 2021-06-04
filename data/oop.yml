@@ -44,7 +44,7 @@ questions:
         question: 'How can you modify the copy of an object during a clone operation?'
         answers:
             - {value: 'Put the logic in the object''s constructor to alter the values', correct: false}
-            - {value: 'Implment your own function to do object copying', correct: false}
+            - {value: 'Implement your own function to do object copying', correct: false}
             - {value: 'Implement the object''s __clone() method', correct: true}
             - {value: 'Implement __get() and __set() methods with the correct logic', correct: false}
             - {value: 'Implement the __copy() method with the correct logic', correct: false}
